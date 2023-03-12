@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>study Buddy| main page</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        width: 100vw;
+    }
+
+    header {
+        background-color: rgb(177, 207, 131);
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        width: 100vw;
+        
+    }
+
+    header .left {
+        left: 100px;
+        /* border: 2px solid red; */
+        width: fit-content;
+        padding-left: 40px;
+
+    }
+
+    header .left img {
+        display: inline-block;
+    }
+
+    header .mid {
+        /* border: 2px solid black; */
+        width: fit-content;
+        padding: 10px;
+        word-spacing: 30px;
+        font-size: 18px;
+    }
+
+    header .mid a {
+        color: black;
+    }
+
+    a:hover,
+    a.active {
+        font-weight: bolder;
+        text-decoration: underline;
+        text-decoration-color: black;
+        cursor: pointer;   
+    }
+
+    header .right {
+        /* border: 2px solid blue; */
+        width: fit-content;
+        right: 30px;
+
+    }
+
+    .container {
+        overflow: hidden;
+        width: 100%;
+        margin: 0px;
+        display: inline;
+        
+
+    }
+    .container img {
+        width: 100%;
+        height: 600px;
+        /* border: 2px solid orange; */
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    #categories_up {
+        margin: auto;
+        width: 400px;
+        border: 0.3px solid rgb(173, 163, 163);
+    }
+
+    #categories_down {
+        margin: auto;
+        width: 800px;
+        border: 0.3px solid rgb(173, 163, 163);
+    }
+
+    .cseBooks {
+        /* border: 2px solid red; */
+        background-color: lightgray;
+        padding: 2px;
+    }
+
+    .cseBooks .boxes {
+        display: flex;
+        align-items: center;
+        justify-content: space-around
+    }
+
+    .cseBooks .boxes .item {
+        /* margin: 20px; */
+        width: 180px;
+        height: 400px;
+        display: grid;
+        grid-template-rows: 4fr 4fr;
+        background-color: white;
+        box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.7);
+        margin-bottom: 60px;
+
+
+    }
+
+    .cseBooks .boxes .item hr {
+        /* margin-top: 5px;
+        padding-left: 5px; */
+        width: 120px;
+        font-weight: bolder;
+        /* color:black; */
+        border: 0.3px solid rgb(173, 163, 163);
+
+    }
+
+    .cseBooks .item {
+        /* border: 2px solid black; */
+        box-shadow: 2px 2px 5px 5px ;
+    }
+
+    #electrical {
+        /* border: 2px solid red; */
+        background-color: white;
+        padding: 2px;
+    }
+
+    h3 {
+        margin-left: 50px;
+        left: 20px;
+    }
+
+    .cseBooks .boxes .item img {
+        width: 176px;
+        /* border: 2px solid red; */
+        height: 180px;
+        padding: 20px 20px 0px 20px;
+    }
+
+    .cseBooks .boxes .item #text {
+        font-size: 15px;
+        font-weight: bolder;
+        background-color: white;
+        padding-left: 4px;
+        text-align: start;
+
+    }
+
+    h5 {
+
+        font-weight: lighter;
+        text-align: left;
+        padding-left: 6px;
+        /* border: 2px solid blue; */
+        display: block;
+        width: fit-content;
+
+        justify-content: space-between;
+    }
+
+    button {
+        margin: 0px 4px 4px 4px;
+        background-color: rgb(104, 189, 19);
+    }
+
+    button:hover {
+        /* color: rgb(196, 0, 0); */
+        margin-bottom: 10px;
+
+    }
+    body{
+        font-family: 'Montserrat';
+    }
+</style>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="icon 1.png" alt="">
+        </div>
+        <div class="mid">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Author</a>
+            <a href="#">Contact</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="slide-images">
+            <div class="image-container">
+                <img src="engineer cover.png" alt="umage">
+            </div>
+            
+        </div>
+    </div>
+    <hr id="categories_up">
+    <h1> Categories </h1>
+    <hr id="categories_down">
+    <h2>Engineering Books</h2>
+    <div class="cseBooks">
+        <h3>Computer Science Engineering</h3>
+        <div class="boxes">
+            <div class="item" id="box1">
+                <div>
+                    <img src="cs5.jpg" alt="">
+                </div>
+                <div id="text">
+                    <hr>
+                    &nbsp;Computer Networks
+                    <h5>Sanjay Sharma</h5>
+                    <h5>English</h5>
+                </div>
+                <!-- <span class="glyphicon glyphicon-save"></span> -->
+                <button><a href="" style="text-decoration: none; color: black;">View/Download</a></button>
+            </div>
+            <div class="item" id="box2">
+                <div>
+                    <img src="cs4.jpg" alt="">
+                </div>
+                <div id="text">
+                    <hr>
+                    &nbsp;Database Management System(DBMS)
+                    <h5>Dr. Rajiv Chopra</h5>
+                    <h5>English</h5>
+                </div>
+                <!-- <span class="glyphicon glyphicon-save"></span> -->
+                <button><a href="https://books.google.co.in/books?id=FTUJNA4lLdAC&printsec=frontcover#v=onepage&q&f=true" style="text-decoration: none; color: black;"> View/Download</a></button>
+            </div>
+            <div class="item" id="box3">
+                <div>
+                    <img src="cs2.jpg" alt="">
+                </div>
+                <div id="text">
+                    <hr>
+                    &nbsp;Compiler Design
+                    <h5>K.KrishnaKumari</h5>
+                    <h5>English</h5>
+
+                </div>
+                <button><a href="" style="text-decoration: none; color: black;">View/Download</a></button>
+            </div>
+            <div class="item" id="box4">
+                <div>
+                    <img src="cs1.jpg" alt="">
+                </div>
+                <div id="text">
+                    <hr>
+                    &nbsp;Software Testing
+                    <h5>Rajesh Hongal</h5>
+                    <h5>English</h5>
+                </div>
+                <button><a href="" style="text-decoration: none; color: black;">View/Download</a></button>
+            </div>
+            <div class="item" id="box5">
+                <div>
+                    <img src="cs3.jpg" alt="">
+                </div>
+                <div id="text">
+                    <hr>
+                    &nbsp;Machine Learning
+                    <h5>Sergios Theodoridis</h5>
+                    <h5>English</h5>
+                </div>
+                <button><a href="https://www.technicalbookspdf.com/download/?file=14299" style="text-decoration: none; color: black;"> View/Download</a></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cseBooks" id="electrical">
+        <h3>Electrical Engineering</h3>
+        <div class="boxes">
+            <div class="item" id="box1">
+                <div>
+                    <img src="electrical.jpg" alt="">
+                </div>
+                <div id="text">
+                    <hr>
+                    &nbsp;Basic Electrical Engineering
+                    <h5>D C Kulshrestha</h5>
+                    <h5>English</h5>
+                </div>
+                <button><a href="https://wiac.info/docview" style="text-decoration: none; color: black;">View/Download</a></button>
+            </div>
+            <div class="item" id="box2">
+                <div>
+                    <img src="e3.jpg" alt="">
+                </div>
+                <div id="text">
+                    <hr>
+                    &nbsp;Electrical Transformers
+                    <h5>Ryan Godsell</h5>
+                    <h5>English</h5>
+                </div>
+                <button><a href="https://toaz.info/doc-view" style="text-decoration: none; color: black;">View/Download</a></button>
+            </div>
+            <div class="item" id="box3">
+                <div>
+                    <img src="e2.jpg" alt="">
+                </div>
+                <div id="text">
+                    <hr>
+                    &nbsp;Electrical Design
+                    <h5>S.K. Bhattacharya</h5>
+                    <h5>English</h5>
+                </div>
+                <button><a href="" style="text-decoration: none; color: black;">View/Download</a></button>
+            </div>
+            <div class="item" id="box4">
+                <div>
+                    <img src="e1.jpg" alt="">
+                </div>
+                <div id="text">
+                    <hr>
+                    &nbsp;Electricity and Electronics
+                    <h5>James D. Harderman</h5>
+                    <h5>English</h5>
+                </div>
+                <button><a href="" style="text-decoration: none; color: black;">View/Download</a></button>
+            </div>
+            <div class="item" id="box5">
+                <div>
+                    <img src="e.jpg" alt="">
+                </div>
+                <div id="text">
+                    <hr>
+                    &nbsp;Basic Electrical Engineering
+                    <h5>C L Wadhwa</h5>
+                    <h5>English</h5>
+                </div>
+                <button><a href="https://pdfcoffee.com/qdownload/basic-electrical-engineering-by-c-l-wadhwa-by-easyengineering-pdf-free.html" style="text-decoration: none; color: black;">View/Download</a></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cseBooks">
+        <h3>Civil Engineering</h3>
+        <div class="boxes">
+            <div class="item" id="box1">
+                <div><img src="civil7.jpg" alt="">
+                </div>
+                <div id="text">
+                    <hr>
+                    &nbsp;Civil Engineering Drawing-I
+                    <h5>writer_name</h5>
+                    <h5>language</h5>
+                </div>
+                <button><a href="" style="text-decoration: none; color: black;">View/Download</a></button>
+            </div>
+            <div class="item" id="box2">
+                <div><img src="civil2.jpg" alt="">
+                </div>
+                <div id="text">
+                    <hr>
+                    &nbsp;Construction Materials
+                    <h5>writer_name</h5>
+                    <h5>language</h5>
+                </div>
+                <button><a href="" style="text-decoration: none; color: black;">View/Download</a></button>
+            </div>
+            <div class="item" id="box3">
+                <div><img src="civil.jpg" alt="">
+                </div>
+                <div id="text">
+                    <hr>
+                    &nbsp;Basic Civil Engineering
+                    <h5>writer_name</h5>
+                    <h5>language</h5>
+                </div>
+                <button><a href="https://pdfcoffee.com/qdownload/basic-electrical-engineering-by-c-l-wadhwa-by-easyengineering-pdf-free.html" style="text-decoration: none; color: black;">View/Download</a></button>
+            </div>
+            <div class="item" id="box4">
+                <div><img src="civil1.jpg" alt="">
+                </div>
+                <div id="text">
+                    <hr>
+                    &nbsp;Highway Engineering
+                    <h5>writer_name</h5>
+                    <h5>language</h5>
+                </div>
+                <button><a href="" style="text-decoration: none; color: black;">View/Download</a></button>
+            </div>
+            <div class="item" id="box5">
+                <div><img src="e4.jpg" alt="">
+                </div>
+                <div id="text">
+                    <hr>
+                    &nbsp;Basic Surveying
+                    <h5>writer_name</h5>
+                    <h5>language</h5>
+                </div>
+                <button><a href="" style="text-decoration: none; color: black;">View/Download</a></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cseBooks" id="electrical">
+        <h3>Mechanical Engineering</h3>
+        <div class="boxes">
+            <div class="item" id="box1">
+                <div><img src="mechanical3.jpg" alt="">
+                </div>
+                <div id="text">
+                    <hr>
+                    &nbsp;Mechanics of Mateiral
+                    <h5>James M.</h5>
+                    <h5>English</h5>
+                </div>
+                <button><a href="https://pdfcoffee.com/qdownload/mechanics-of-material-7th-edition-james-m-gere-freelibrosorg-pdf-free.html" style="text-decoration: none; color: black;">View/Download</a></button>
+            </div>
+            <div class="item" id="box2">
+                <div><img src="mechanical2.jpg" alt="">
+                </div>
+                <div id="text">
+                    <hr>
+                    &nbsp;Gears and Gear Cutting
+                    <h5>Ivan Law</h5>
+                    <h5>English</h5>
+                </div>
+                <button><a href="https://pdfcookie.com/download/workshop-practice-series-volume-17-gears-and-gear-cutting-ivan-lawpdf-j9lgooxqqm20" style="text-decoration: none; color: black;">View/Download</a></button>
+            </div>
+            <div class="item" id="box3">
+                <div><img src="mechanical1.jpg" alt="">
+                </div>
+                <div id="text">
+                    <hr>
+                    &nbsp;Machine Design
+                    <h5>R S Khurmi</h5>
+                    <h5>English</h5>
+                </div>
+                <button><a href="https://pdfcookie.com/download/workshop-practice-series-volume-17-gears-and-gear-cutting-ivan-lawpdf-j9lgooxqqm20" style="text-decoration: none; color: black;">View/Download</a></button>
+            </div>
+            <div class="item" id="box4">
+                <div><img src="mech4.jpg" alt="">
+                </div>
+                <div id="text">
+                    <hr>
+                    &nbsp;Mechatronics
+                    <h5>William Bolton</h5>
+                    <h5>English</h5>
+                </div>
+                <button><a href="" style="text-decoration: none; color: black;">View/Download</a></button>
+            </div>
+            <div class="item" id="box5">
+                <div><img src="mechanical.jpg" alt="">
+                </div>
+                <div id="text">
+                    <hr>
+                    &nbsp;Elements of Mechanical Engineering
+                    <h5>writer_name</h5>
+                    <h5>Engineering</h5>
+                </div>
+                <button><a href="" style="text-decoration: none; color: black;">View/Download</a></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="medicalBooks">
+        <div class="cseBooks">
+            <h3>Medical Books</h3>
+            <div class="boxes">
+                <div class="item" id="box1">
+                    <div><img src="m1.jpg" alt="">
+                    </div>
+                    <div id="text">
+                        <hr>
+                        &nbsp;Human Anatomy
+                        <h5>writer_name</h5>
+                        <h5>English</h5>
+                    </div>
+                    <button><a href="" style="text-decoration: none; color: black;">View/Download</a></button>
+                </div>
+                <div class="item" id="box2">
+                    <div><img src="m7.jpg" alt="">
+                    </div>
+                    <div id="text">
+                        <hr>
+                        &nbsp;Clinical Phhthalmology
+                        <h5>writer_name</h5>
+                        <h5>language</h5>
+                    </div>
+                    <button><a href="" style="text-decoration: none; color: black;">View/Download</a></button>
+                </div>
+                <div class="item" id="box3">
+                    <div><img src="m2.jpg" alt="">
+                    </div>
+                    <div id="text">
+                        <hr>
+                        &nbsp;Principles of Genetics
+                        <h5>writer_name</h5>
+                        <h5>English</h5>
+                    </div>
+                    <button><a href="" style="text-decoration: none; color: black;">View/Download</a></button>
+                </div>
+                <div class="item" id="box4">
+                    <div><img src="m7.jpg" alt="">
+                    </div>
+                    <div id="text">
+                        <hr>
+                        &nbsp;Clinical Pharmacy and therapeitics
+                        <h5>Cate</h5>
+                        <h5>English</h5>
+                    </div>
+                    <button><a href="http://www.prip.edu.in/img/ebooks/Roger-Walker-Clinical-Pharmacy-and-Therapeutics-5th-Ed.pdf" style="text-decoration: none; color: black;">View/Download</a></button>
+                </div>
+                <div class="item" id="box5">
+                    <div><img src="m4.jpg" alt="">
+                    </div>
+                    <div id="text">
+                        <hr>
+                        &nbsp;Medical Microbiology
+                        <h5>writer_name</h5>
+                        <h5>English</h5>
+                    </div>
+                    <button><a href="" style="text-decoration: none; color: black;">View/Download</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="schoolBooks">
+        <h3>School Books</h3>
+        <div class="class11th">
+            <div class="cseBooks" id="electrical">
+                <h3>Class 11th</h3>
+                <div class="boxes">
+                    <div class="item" id="box1">
+                        <div><img src="11c.jpg" alt="">
+                        </div>
+                        <div id="text">
+                            <hr>
+                            &nbsp;Physics
+                            <h5>Surinder Lal</h5>
+                            <h5>English</h5>
+                        </div>
+                        <button><a href="https://pdfcoffee.com/download/grb-physics-for-competitions-vol-1-pdf-free.html" style="text-decoration: none; color: black;">View/Download</a></button>
+                    </div>
+                    <div class="item" id="box2">
+                        <div><img src="11h.jpg" alt="">
+                        </div>
+                        <div id="text">
+                            <hr>
+                            &nbsp;Computer Networks
+                            <h5>writer_name</h5>
+                            <h5>language</h5>
+                        </div>
+                        <button><a href="" style="text-decoration: none; color: black;">View/Download</a></button>
+                    </div>
+                    <div class="item" id="box3">
+                        <div><img src="cs2.jpg" alt="">
+                        </div>
+                        <div id="text">
+                            <hr>
+                            &nbsp;Computer Networks
+                            <h5>writer_name</h5>
+                            <h5>language</h5>
+                        </div>
+                        <button><a href="" style="text-decoration: none; color: black;">View/Download</a></button>
+                    </div>
+                    <div class="item" id="box4">
+                        <div><img src="cs1.jpg" alt="">
+                        </div>
+                        <div id="text">
+                            <hr>
+                            &nbsp;Computer Networks
+                            <h5>writer_name</h5>
+                            <h5>language</h5>
+                        </div>
+                        <button><a href="" style="text-decoration: none; color: black;">View/Download</a></button>
+                    </div>
+                    <div class="item" id="box5">
+                        <div><img src="cs3.jpg" alt="">
+                        </div>
+                        <div id="text">
+                            <hr>
+                            &nbsp;Computer Networks
+                            <h5>writer_name</h5>
+                            <h5>language</h5>
+                        </div>
+                        <button><a href="" style="text-decoration: none; color: black;">View/Download</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="class12th">
+            <div class="cseBooks" id="electrical">
+                <h3>Class 12th</h3>
+                <div class="boxes">
+                    <div class="item" id="box1">
+                        <div><img src="cs5.jpg" alt="">
+                        </div>
+                        <div id="text">
+                            <hr>
+                            &nbsp;Computer Networks
+                            <h5>writer_name</h5>
+                            <h5>language</h5>
+                        </div>
+                        <button><a href="" style="text-decoration: none; color: black;">View/Download</a></button>
+                    </div>
+                    <div class="item" id="box2">
+                        <div><img src="cs4.jpg" alt="">
+                        </div>
+                        <div id="text">
+                            <hr>
+                            &nbsp;Computer Networks
+                            <h5>writer_name</h5>
+                            <h5>language</h5>
+                        </div>
+                        <button><a href="" style="text-decoration: none; color: black;">View/Download</a></button>
+                    </div>
+                    <div class="item" id="box3">
+                        <div><img src="cs2.jpg" alt="">
+                        </div>
+                        <div id="text">
+                            <hr>
+                            &nbsp;Computer Networks
+                            <h5>writer_name</h5>
+                            <h5>language</h5>
+                        </div>
+                        <button><a href="" style="text-decoration: none; color: black;">View/Download</a></button>
+                    </div>
+                    <div class="item" id="box4">
+                        <div><img src="cs1.jpg" alt="">
+                        </div>
+                        <div id="text">
+                            <hr>
+                            &nbsp;Computer Networks
+                            <h5>writer_name</h5>
+                            <h5>language</h5>
+                        </div>
+                        <button><a href="" style="text-decoration: none; color: black;">View/Download</a></button>
+                    </div>
+                    <div class="item" id="box5">
+                        <div><img src="cs3.jpg" alt="">
+                        </div>
+                        <div id="text">
+                            <hr>
+                            &nbsp;Computer Networks
+                            <h5>writer_name</h5>
+                            <h5>language</h5>
+                        </div>
+                        <button><a href="" style="text-decoration: none; color: black;">View/Download</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- footer -->
+    <div class="main-wrap">
+        <div class="footer-wrap">
+            <div class="footer-wrap-1">
+                <div class="footer-section">
+                    <h1>About</h1>
+                    <a href="#">Services</a>
+                    <a href="#">Founders</a>
+                    <a href="#">Quality Assurance</a>
+                </div>
+                <div class="footer-section">
+                    <h1>Resource</h1>
+                    <a href="#">Engineering</a>
+                    <a href="#">Medical</a>
+                    <a href="#">Foundation</a>
+                </div>
+                <div class="footer-section">
+                    <h1>Contact</h1>
+                    <a href="#">Facebook</a>
+                    <a href="#">Linkedin</a>
+                    <a href="#">Email</a>
+                </div>
+                <div class="footer-section">
+                    <h1>stay connected</h1>
+                    <p>Subscribe to our newsletter</p>
+                    <form action="">
+                        <input type="email" name="email" id="email" placeholder="Enter email address">
+                        <button type="submit" class="btn">Subscribe  </button>
+                    </form>
+                </div>
+
+            </div>
+            <div class="footer-wrap-2">
+                <div class="line">
+                    
+                </div>
+                <div class="social-link">
+                    <a href="#">
+                        <img src="facebook.png" alt="Facebook">
+                    </a>
+                    <a href="#">
+                        <img src="google.png" alt="Google">
+                    </a>
+                    <a href="#">
+                        <img src="twitter.png" alt="Twitter">
+                    </a>
+                    <a href="#">
+                        <img src="linkedin.png" alt="Linkedin">
+                    </a>
+                </div>
+               
+            </div>
+        </div>
+        <div class="footer-button">
+            <div class="first-box">
+                <a href="#">Terms and condition</a>
+                <a href="#">privacy</a>
+            </div>
+            <div class="last-box">
+                <a href="#">&copy;Copyright © 2010 by Author Name All rights reserved.</a>
+            </div>
+        </div>          
+    </div>
+</body>
+
+</html>
